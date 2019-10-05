@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.6156863, g: 0, b: 0.04974103, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52664ee33f574f52a1fb1ca3848b4dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monoTone: {fileID: 2100000, guid: 6605b08423615474583925150f326651, type: 2}
+  _material: {fileID: 0}
 --- !u!1 &726969774
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816b289ef451e094f9ae174fb4cf8db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UseCustomMaterial: 1
+  m_UseCustomMaterial: 0
   m_CustomMaterial: {fileID: 2100000, guid: 6605b08423615474583925150f326651, type: 2}
 --- !u!114 &1319249551
 MonoBehaviour:
@@ -981,7 +981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52664ee33f574f52a1fb1ca3848b4dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monoTone: {fileID: 2100000, guid: 6605b08423615474583925150f326651, type: 2}
+  _material: {fileID: 2100000, guid: 2368c91f12c4f4db7a5f78b55deb2c87, type: 2}
 --- !u!1 &1854405288
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+[ExecuteInEditMode, ImageEffectAllowedInSceneView]
 public class PostEffect : MonoBehaviour
 {
-    public Material monoTone;
+    public Material _material;
     void OnRenderImage(RenderTexture src, RenderTexture dest)
     {
-        Graphics.Blit(src, dest, monoTone);
+        Graphics.Blit(src, dest, _material);
     }
 }
