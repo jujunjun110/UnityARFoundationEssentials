@@ -7,8 +7,6 @@ public class EnvUtil : MonoBehaviour {
     [SerializeField] Camera debugCamera;
 
     void Start() {
-        Debug.LogFormat("IS EDITOR?: {0}", Application.isEditor);
-
         if (Application.isEditor) {
             productionCamera.gameObject.SetActive(false);
             debugCamera.gameObject.SetActive(true);
