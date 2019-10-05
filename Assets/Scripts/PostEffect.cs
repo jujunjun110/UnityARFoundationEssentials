@@ -3,9 +3,13 @@
 [ExecuteInEditMode, ImageEffectAllowedInSceneView]
 public class PostEffect : MonoBehaviour {
     public Material _material;
+    [SerializeField] float duration = 0.06f;
+    [SerializeField] float max = 0.01f;
+    [SerializeField] float interval = 5.0f;
     // private float size;
     void OnRenderImage(RenderTexture src, RenderTexture dest) {
         // size = (Mathf.Max((Mathf.Sin(Time.time * 3.0f) * 1.08f), 1.0f) - 1.0f) * 0.1f;
+
         // size = (Mathf.Max((t - (int)t), 0.9f) - 0.9f) * 0.1f;
 
         // Debug.LogFormat("Size: {0}", size);
@@ -15,9 +19,6 @@ public class PostEffect : MonoBehaviour {
     }
 
     private float getsize(float time) {
-        float duration = 0.06f;
-        float max = 0.01f;
-        float interval = 5.0f;
 
         float time2 = time % interval;
         if (time2 > duration) {

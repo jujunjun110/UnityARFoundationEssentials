@@ -44,12 +44,13 @@
                 return o;
             }
             
-			float4 frag(v2f_img i) : SV_Target {
+			float4 frag(v2f i) : SV_Target {
 				half2 vUv = i.uv;
-                float angle = .0;
-                float amount = _Size;
+                // float angle = .0;
+                // float amount = _Size;
 				
-				half2 offset = amount * half2( cos(angle), sin(angle));
+				// half2 offset = amount * half2(cos(angle), sin(angle));
+                half2 offset = half2(_Size, 0.0);
                 // half2 offset = _Size;
 				half4 cr = tex2D(_MainTex, vUv + offset);
 				half4 cga = tex2D(_MainTex, vUv);
@@ -72,6 +73,8 @@
 
             //     return col;
             // }
+
+
             ENDCG
         }
     }}
